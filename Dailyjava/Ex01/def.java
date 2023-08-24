@@ -1,22 +1,40 @@
 public class def {
   public static void main(String[]args){
     carro obj = new carro();
-    obj.modelo = "bmw x1";
-    obj.placa = "bha 123";
-    obj.portas = 4;
-    obj. mostrar();
+    obj.setmModelo("Bmw x1");
+    obj.setPortas(2);
+    obj.getmodelo();
+
+   
+
       
   }
   
 }
 
 class carro{
-  public int portas;
-  public String placa;
-  public String modelo;
-    public void mostrar(){
-      System.out.println("Modelo: "  +modelo);
-      System.out.println(" Portas: "  +portas);
-      System.out.println(" Placa: " +placa);
-    }
+  private int portas;
+  private String placa;
+  private String modelo;
+
+  public int getPortas(){
+    return portas;
+  }
+  public String getPaca(){
+    return placa;
+  }
+  public String getmodelo(){
+    return modelo;
+  }
+
+  public void setPortas(int portas){
+    this.portas = portas;
+  }
+  public void setmModelo(String modelo){
+    this.modelo = modelo;
+  }
+  public void setPortas(String placa){
+    this.placa = placa;
+  }
+
  }
